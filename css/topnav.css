@@ -1,0 +1,315 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 24.05.2018, 9:25:08
+    Author     : P.Artem
+*/
+
+header .topnav .nav-item{
+    padding: 10px 10px;
+    color: white;
+}
+header #topNav.responsive{
+  
+}
+header #topNav.responsive.opened .subnav{
+    width: 100%;
+    height: auto;
+    margin: auto;
+    background: rgb(80, 38, 136);
+    box-shadow: 1px 2px 6px black;
+    font-size: 15px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    text-align: center;
+    transition:all .4s ease-in-out;
+    position: absolute;
+}
+header #topNav.responsive .subnav li:hover{
+    border-top:1px solid #7B54B1;
+    border-bottom:1px solid #7B54B1;
+}
+header #topNav{
+    background:transparent;
+    padding:10px;
+    
+}
+header .subnav{
+    transition:all .4s ease-in-out;
+    float: left;
+}
+header .menu-toggler{
+    float: right;
+    display:none !important;
+    color: white;
+    font-size: 20px;
+    padding: 0 10px;
+    background: #5a2394;
+}
+
+
+@media screen and (max-width: 1030px){
+
+    .section3 .block .row {
+        flex-direction: column;
+    }
+    .section3 .col-sm-4{
+        width:100%;
+    }
+    .sub-nav .nav-item{
+        padding:10px 5px !important;
+    }
+    .left-nav {
+        left: 2%;
+    }
+
+}
+@media screen and (min-width: 801px){
+    .moby{
+        display:none;
+    }
+}
+                        
+@media screen and (max-width: 800px){
+    h1{
+        font-size:220%;
+        text-align: center;
+    }
+    h2{
+        font-size:136%;
+        margin: 15px 0 15px;
+    }
+    .moby{
+        display:block;
+        overflow: hidden;
+            min-height: 150px;
+    }
+    .section1 .logo{
+        padding-top:0;
+    }
+    .mob-image{
+        display:block !important;
+        width: 300px;
+        height: 300px;
+    }
+    .section1 .img:not(.mob-image){
+        display:none;
+    }
+    header .menu-toggler{
+        display:block !important;
+    }
+    header .subnav{
+        /*display:none !important;*/
+        height:0;
+    }
+    header #topNav.opened .subnav{
+        /*display:block  !important;*/
+        height:auto;
+    }
+    .col-sm-7{
+        width:100% !important;
+    }
+    #topNav{
+        /*overflow:hidden;*/
+    }
+    section{
+        padding:10px;
+    }
+    .section10 .navbar{
+        padding:0;
+    }
+    .section10 .navbar{
+        width:100%;
+    }
+    .section11 .form{
+        padding:20px;
+        min-width:1px;
+    }
+    .section9 .package{
+        padding:0;
+        margin-bottom: 10px;
+    }
+    .section9 .list-item.included:after,
+    .section9 .list-item:not(.included):after{
+        right:2%;
+    }
+    .section9 .package .holder {
+        padding: 20px 7%;
+    }
+    .section8 .slider .arrow{
+        width:30px;
+        height:30px;
+        font-size: 24px;
+        padding-top: 0px;
+        top: calc(50% - 20px);
+    }
+    .section8 .display{
+        width:300px;
+        height:300px;
+    }
+    .section8 .display {
+        height: 120px;
+    }
+    .section7 .expert-img {
+        max-height: 275px;
+    }
+    .section7 .name, .section7 .role{
+        text-align:center;
+    }
+    .section6 .flexy{
+        display:inherit;
+    }
+    .section6 .col-md-4{
+        padding: 30px;
+    }
+    .section5 .equalHWrap{
+        display:inherit !important;
+    }
+    .section3 .block .row{
+        display:inherit;
+    }
+    .section3 .col-sm-4{
+        margin:20px 0;
+    }
+    .section2 ul {
+        width: 100%;
+    }
+    .section2 ul li, .section2 ul li span {
+        font-size: 100%;
+    }
+    .section2 ul {
+        min-width: 100%;
+    }
+    .section1 .title {
+        font-size: 10px;
+    }
+    .sectionMap{
+        display:none;
+    }
+    
+    .form{
+        width:100%;
+    }
+    .row {
+        margin-right: 0;
+        margin-left: 0;
+    }
+    .mob-image{
+        margin-top: 30px;
+        opacity: 0;
+        display:none ;
+    }
+    .mob-image.active{
+        opacity:1;
+    }
+    .img{
+        left:0;
+        right:0;
+        top:0;
+        bottom:0;
+        margin:auto;
+    }
+    
+}
+
+@media screen and (max-width: 600px) ,  screen and (min-height: 501px) { 
+    .jumbotrone{
+        height:auto;
+    }
+} 
+
+@media  screen and (max-height: 500px) { 
+    .jumbotrone{
+        height:100vh;
+    }
+}   
+
+
+@media screen and (max-width: 600px) {
+    .section8 .display{
+        width:100%;
+    }
+    .section9-5 .inner{
+        flex-direction:column;
+    }
+    .section1 p.off {
+        text-align: center;
+    }
+    .section3 .col-sm-4 .inner {
+        padding: 0;
+    }
+    .jumbotrone{
+        padding-top:10px;
+        padding-bottom:10px;
+    }
+    .section1 .col-sm-8{
+        padding:0 !important;
+    }
+    .container-fluid{
+        padding:0 !important;
+    }
+    #topNav{
+        padding:0 !important  ;
+        margin:0 !important  ;
+    }
+    h1{
+        font-size:185%;
+        padding:5px;
+        margin:0px;
+    }
+    .start-at, .section1 .button{
+        margin: 0;
+    }
+    .section1 .button-holder{
+        margin:10px 0 0;
+        padding:0;
+    }
+
+    p, span {
+        font-size: 13px;
+    }
+    br{
+        display:none;
+        height:5px;
+    }
+    .section1 .hblock .desc {
+        padding: 3px 0;
+        line-height: 15px;
+    }
+    .bigger {
+        font-size: 20px;
+    }
+    
+    .footer{
+        display: flex;
+        overflow-y: auto;
+    }
+    
+    .mob-image.active{
+        display:block !important;
+    }
+    .section1 .button{
+        padding:10px 25px;
+    }
+    .section1 .nav2{
+        margin-top: 20px;
+    }
+    .section1 .mobile-nav{
+        display:block;
+        flex-direction: row;
+    }
+    .section1 .nav2{
+        display:none;
+    }
+    .section1 .cen{
+        opacity:0;
+    }
+    .jumbotrone{
+        padding-top: 25px;
+        padding-bottom: 25px;
+    }
+
+}
